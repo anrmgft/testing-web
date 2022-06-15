@@ -24,4 +24,12 @@ public class HttpRequestTest {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
                 String.class)).contains("Hello, World");
     }
+
+    @Test
+    public void cat() throws Exception {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/",
+                String.class)).contains("Hello, World");
+    }
+
+
 }
