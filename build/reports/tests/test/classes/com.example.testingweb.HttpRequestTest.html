@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.729s</div>
+<div class="counter">2.757s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,7 +78,7 @@
 <span class="code">
 <pre>org.opentest4j.AssertionFailedError: 
 expected: &quot;&quot;
- but was: &quot;{&quot;timestamp&quot;:&quot;2022-06-15T15:50:05.375+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;path&quot;:&quot;/add&quot;}&quot;
+ but was: &quot;{&quot;timestamp&quot;:&quot;2022-06-15T15:58:39.342+00:00&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;path&quot;:&quot;/add&quot;}&quot;
 	at java.base@11.0.15/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@11.0.15/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base@11.0.15/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -182,37 +182,37 @@ expected: &quot;&quot;
 </thead>
 <tr>
 <td class="success">catAdd()</td>
-<td class="success">0.098s</td>
+<td class="success">0.024s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">catAddNegativeNumbers()</td>
-<td class="success">0.089s</td>
+<td class="success">0.048s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">catAddWithEmptyValue()</td>
-<td class="success">0.078s</td>
+<td class="success">0.023s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">catAddWithFractions()</td>
-<td class="success">0.127s</td>
+<td class="success">0.063s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="failures">catAddWithInvalidNumber()</td>
-<td class="failures">3.214s</td>
+<td class="failures">2.512s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">catAddWithMissingValue()</td>
-<td class="success">0.074s</td>
+<td class="success">0.056s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">greetingShouldReturnDefaultMessage()</td>
-<td class="success">0.049s</td>
+<td class="success">0.031s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -220,24 +220,24 @@ expected: &quot;&quot;
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>17:49:49.417 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-17:49:49.450 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-17:49:49.636 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.testingweb.HttpRequestTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-17:49:49.696 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.testingweb.HttpRequestTest], using SpringBootContextLoader
-17:49:49.722 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.testingweb.HttpRequestTest]: class path resource [com/example/testingweb/HttpRequestTest-context.xml] does not exist
-17:49:49.727 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.testingweb.HttpRequestTest]: class path resource [com/example/testingweb/HttpRequestTestContext.groovy] does not exist
-17:49:49.730 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.testingweb.HttpRequestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-17:49:49.736 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.testingweb.HttpRequestTest]: HttpRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:49:50.009 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.testingweb.HttpRequestTest]
-17:49:50.600 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/sinensia/testing-web/build/classes/java/main/com/example/testingweb/TestingWebApplication.class]
-17:49:50.606 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.testingweb.TestingWebApplication for test class com.example.testingweb.HttpRequestTest
-17:49:51.496 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.testingweb.HttpRequestTest]: using defaults.
-17:49:51.498 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-17:49:51.565 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
-17:49:51.566 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-17:49:51.567 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2c88b9fc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@64dafeed, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@388ba540, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@47605f2f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2ece4966, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1dd0e7c4, org.springframework.test.context.event.EventPublishingTestExecutionListener@7894f09b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3d484181, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6111ba37, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7be58f16, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@242aa8d9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b11a194, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@37bd68c3]
-17:49:51.592 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1e1d3956 testClass = HttpRequestTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4f2c9ba6 testClass = HttpRequestTest, locations = '{}', classes = '{class com.example.testingweb.TestingWebApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@63611043, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5a3bc7ed, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@291f18, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@d771cc9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@19c65cdc, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@43c1b556], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-17:49:51.630 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@1e1d3956 testClass = HttpRequestTest, testInstance = com.example.testingweb.HttpRequestTest@a5b0b86, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4f2c9ba6 testClass = HttpRequestTest, locations = '{}', classes = '{class com.example.testingweb.TestingWebApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@63611043, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5a3bc7ed, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@291f18, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@d771cc9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@19c65cdc, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@43c1b556], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
+<pre>17:57:41.863 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:57:41.913 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:57:42.174 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.testingweb.HttpRequestTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:57:43.703 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.testingweb.HttpRequestTest], using SpringBootContextLoader
+17:57:43.730 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.testingweb.HttpRequestTest]: class path resource [com/example/testingweb/HttpRequestTest-context.xml] does not exist
+17:57:43.744 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.testingweb.HttpRequestTest]: class path resource [com/example/testingweb/HttpRequestTestContext.groovy] does not exist
+17:57:43.767 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.testingweb.HttpRequestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:57:43.771 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.testingweb.HttpRequestTest]: HttpRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:57:45.519 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.testingweb.HttpRequestTest]
+17:57:48.680 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/sinensia/testing-web/build/classes/java/main/com/example/testingweb/TestingWebApplication.class]
+17:57:48.698 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.testingweb.TestingWebApplication for test class com.example.testingweb.HttpRequestTest
+17:57:55.069 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.testingweb.HttpRequestTest]: using defaults.
+17:57:55.083 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:57:56.339 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+17:57:56.345 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+17:57:56.452 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@36546a22, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@285c08c8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@295eaa7c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3918c187, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2c88b9fc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@64dafeed, org.springframework.test.context.event.EventPublishingTestExecutionListener@388ba540, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@47605f2f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ece4966, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1dd0e7c4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7894f09b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3d484181, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6111ba37]
+17:57:56.549 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5b7ea70d testClass = HttpRequestTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2bef51f2 testClass = HttpRequestTest, locations = '{}', classes = '{class com.example.testingweb.TestingWebApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5be46f9d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@63f259c3, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7c8c9a05, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7a55af6b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2bb3058, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@24313fcc], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+17:57:56.801 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@5b7ea70d testClass = HttpRequestTest, testInstance = com.example.testingweb.HttpRequestTest@7e38a7fe, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2bef51f2 testClass = HttpRequestTest, locations = '{}', classes = '{class com.example.testingweb.TestingWebApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@5be46f9d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@63f259c3, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7c8c9a05, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7a55af6b, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2bb3058, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@24313fcc], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]].
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -247,19 +247,19 @@ expected: &quot;&quot;
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.0)
 
-2022-06-15 17:49:53.605  INFO 204796 --- [    Test worker] com.example.testingweb.HttpRequestTest   : Starting HttpRequestTest using Java 11.0.15 on sinensia-virtual-machine with PID 204796 (started by sinensia in /home/sinensia/testing-web)
-2022-06-15 17:49:53.619  INFO 204796 --- [    Test worker] com.example.testingweb.HttpRequestTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2022-06-15 17:49:59.367  INFO 204796 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-06-15 17:49:59.402  INFO 204796 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-15 17:49:59.403  INFO 204796 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-06-15 17:49:59.781  INFO 204796 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-15 17:49:59.781  INFO 204796 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5884 ms
-2022-06-15 17:50:02.806  INFO 204796 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 39785 (http) with context path ''
-2022-06-15 17:50:02.892  INFO 204796 --- [    Test worker] com.example.testingweb.HttpRequestTest   : Started HttpRequestTest in 11.185 seconds (JVM running for 20.623)
-2022-06-15 17:50:04.984  INFO 204796 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-15 17:50:04.993  INFO 204796 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-15 17:50:05.014  INFO 204796 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2022-06-15 17:50:05.234  WARN 204796 --- [o-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: &quot;X&quot;]
+2022-06-15 17:58:11.147  INFO 205598 --- [    Test worker] com.example.testingweb.HttpRequestTest   : Starting HttpRequestTest using Java 11.0.15 on sinensia-virtual-machine with PID 205598 (started by sinensia in /home/sinensia/testing-web)
+2022-06-15 17:58:12.274  INFO 205598 --- [    Test worker] com.example.testingweb.HttpRequestTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-06-15 17:58:33.230  INFO 205598 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-06-15 17:58:33.350  INFO 205598 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-15 17:58:33.352  INFO 205598 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-15 17:58:34.249  INFO 205598 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-15 17:58:34.251  INFO 205598 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 19389 ms
+2022-06-15 17:58:37.253  INFO 205598 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 42207 (http) with context path ''
+2022-06-15 17:58:37.283  INFO 205598 --- [    Test worker] com.example.testingweb.HttpRequestTest   : Started HttpRequestTest in 39.934 seconds (JVM running for 130.425)
+2022-06-15 17:58:38.907  INFO 205598 --- [o-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 17:58:38.909  INFO 205598 --- [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-15 17:58:38.912  INFO 205598 --- [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-06-15 17:58:39.300  WARN 205598 --- [o-auto-1-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: &quot;X&quot;]
 </pre>
 </span>
 </div>
@@ -271,7 +271,7 @@ expected: &quot;&quot;
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4.1</a> at Jun 15, 2022, 5:50:07 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4.1</a> at Jun 15, 2022, 5:58:49 PM</p>
 </div>
 </div>
 </body>

@@ -19,12 +19,19 @@ pipeline {
                 //yarn "build"
 
 		sh "./gradlew test"
-
+  }
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
 
-
+            post {
+                // If Maven was able to run the tests, even if some of the test
+                // failed, record the test results and archive the jar file.
+                success {
+                    junit 'build/test-results/test/*.xml'
+                    archiveArtifacts 'build/libs/*.jar'
+                }
+            }
         }
         stage('Publish') {
             steps{
