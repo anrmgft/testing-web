@@ -1,11 +1,11 @@
 pipeline {
     agent any
-	options {
-        ansiColor('xterm')
-        timestamps()
-        disableConcurrentBuilds()
-        buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
-    }
+    options {
+            ansiColor('xterm')
+            timestamps()
+            disableConcurrentBuilds()
+            buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
+        }
 
     stages {
         stage('Build') {
@@ -14,12 +14,9 @@ pipeline {
                 //git branch: 'main', url: 'https://github.com/anrmgft/hello-springrest.git'
 
                 // Run Maven on a Unix agent.
-
-		//yarn "install"
-                //yarn "build"
-
-		sh "./gradlew test"
-  }
+                withGradle {
+                sh "./gradlew test assemble"
+                }
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
