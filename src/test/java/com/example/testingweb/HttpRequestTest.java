@@ -49,11 +49,11 @@ public class HttpRequestTest {
                 .isEqualTo("3.5");
     }
 
-    @Test
-    public void catAddWithInvalidNumber() {
-        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=X", String.class))
-                .isEqualTo("");
-    }
+    //@Test
+    //public void catAddWithInvalidNumber() {
+    //    assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=X", String.class))
+    //            .isEqualTo("");
+    //}
 
     @Test
     public void catAddNegativeNumbers() {
