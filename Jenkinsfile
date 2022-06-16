@@ -17,12 +17,7 @@ pipeline {
                 withGradle {
                 sh "./gradlew test assemble"
                 jacoco()
-                    pmd {
-                        consoleOutput = true
-                        toolVersion = "6.21.0"
-                        rulesMinimumPriority = 5
-                        ruleSets = ["category/java/errorprone.xml", "category/java/bestpractices.xml"]
-                    }
+
                 }
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
