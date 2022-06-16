@@ -12,11 +12,11 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 //git branch: 'main', url: 'https://github.com/anrmgft/hello-springrest.git'
-
+                jacoco()
                 // Run Maven on a Unix agent.
                 withGradle {
                 sh "./gradlew test assemble"
-                jacoco()
+
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
