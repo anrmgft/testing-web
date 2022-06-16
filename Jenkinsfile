@@ -15,8 +15,9 @@ pipeline {
 
                 // Run Maven on a Unix agent.
                 withGradle {
-                sh "./gradlew test assemble"
+                sh "./gradlew check test assemble"
                 jacoco()
+
 
                 }
                 // To run Maven on a Windows agent, use
