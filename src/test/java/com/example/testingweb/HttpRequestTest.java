@@ -140,11 +140,11 @@ public class HttpRequestTest {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=1&b=2", String.class))
                 .isEqualTo("0.5");
     }
-    /*@Test
+    @Test
     public void catDivideZero() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=1&b=0", String.class))
-                .isEqualTo("Infinity");
-    }*/
+                .isEqualTo("\"Infinity\"");
+    }
 }
 
 
