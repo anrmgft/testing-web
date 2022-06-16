@@ -17,7 +17,7 @@ pipeline {
                 withGradle {
                 sh "./gradlew check test assemble"
                 jacoco()
-
+                recordIssues(tools: [pmdParser(pattern: 'build/reports/pmd/*.xml')])
 
                 }
                 // To run Maven on a Windows agent, use
@@ -30,6 +30,7 @@ pipeline {
                 success {
                     junit 'build/test-results/test/*.xml'
                     archiveArtifacts 'build/libs/*.jar'
+
                 }
             }
         }
