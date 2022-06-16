@@ -49,11 +49,11 @@ public class HttpRequestTest {
                 .isEqualTo("3.5");
     }
 
-    //@Test
-    //public void catAddWithInvalidNumber() {
-    //    assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=X", String.class))
-    //            .isEqualTo("");
-    //}
+    /*@Test
+    public void catAddWithInvalidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=X", String.class))
+                .isEqualTo("");
+    }*/
 
     @Test
     public void catAddNegativeNumbers() {
@@ -61,6 +61,22 @@ public class HttpRequestTest {
                 .isEqualTo("-1.0");
     }
 
+    @Test
+    public void catSubtract() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/subtract?a=1&b=2", String.class))
+                .isEqualTo("-1.0");
+    }
+
+    @Test
+    public void catMultiply() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/multiply?a=1&b=2", String.class))
+                .isEqualTo("2.0");
+    }
+    @Test
+    public void catDivide() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=1&b=2", String.class))
+                .isEqualTo("0.5");
+    }
 }
 
 
