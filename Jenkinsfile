@@ -18,6 +18,7 @@ pipeline {
                 sh "./gradlew check test assemble"
                 jacoco()
                 recordIssues(tools: [pmdParser(pattern: 'build/reports/pmd/*.xml')])
+                recordIssues(tools: [pit(pattern: 'build/reports/pitest/*.xml')])
 
                 }
                 // To run Maven on a Windows agent, use
