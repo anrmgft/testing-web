@@ -26,7 +26,13 @@ public class HttpRequestTest {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/", String.class))
                 .contains("Hello, World");
     }
-    
+    @Test
+    public void greetingTestService() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/greeting", String.class))
+                .contains("Hello, World");
+    }
+
+
     @Test
     public void catAdd() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=2", String.class))
